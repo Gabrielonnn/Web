@@ -416,7 +416,8 @@
     background: linear-gradient(20deg, black,rgb(9, 62, 9), rgb(17, 131, 42),white);
 }
 body{
-    background-image: url('imagenes/FondoPag.jpg');
+   
+    background-image: url('FondoPag.jpg');
     background-size: 1520px 930px;
     background-repeat: no-repeat;
 }
