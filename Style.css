@@ -1,6 +1,6 @@
 .inicio{
-    width: 1493px;         /*creo un cuadro de con cordenadas*/
-    height: 160px;      /*      */
+    width: 1493px;       
+    height: 160px;      
     background: linear-gradient(rgb(133, 213, 111), rgb(20, 73, 20),  black); 
     border-radius: 20px;
     font-size: 50px;
