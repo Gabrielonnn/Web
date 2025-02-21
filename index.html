@@ -1,91 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>https://bla/web.mxmx</title>
-    <link rel="stylesheet" href="Style.css"/>
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carta Web</title>
+        <link rel="stylesheet" href="Style.css">
+       
 
-<body>
-    
-    <header class="inicio">
-        <h1>pagina web en proceso</h1>
+
+    </head>
+
+    <body>
+
+
+        <div class="CajaFuerte"></div>
+        <div id="inputDisplay" class="respuesta"  >Password</div>
+        <div class="Corazon" ></div>
+        <div>
+            <button class="caja" type="button" onclick="agregarNumero('0')"  >0</button>
+            <button class="caja1" type="button" onclick="agregarNumero('1')" >1</button>
+            <button class="caja2" type="button" onclick="agregarNumero('2')" >2</button>
+            <button class="caja3" type="button" onclick="agregarNumero('3')" >3</button>
+            <button class="caja4" type="button" onclick="agregarNumero('4')" >4</button>
+            <button class="caja5" type="button" onclick="agregarNumero('5')" >5</button>
+            <button class="caja6" type="button" onclick="agregarNumero('6')" >6</button>
+            <button class="caja7" type="button" onclick="agregarNumero('7')" >7</button>
+            <button class="caja8" type="button" onclick="agregarNumero('8')" >8</button>
+            <button class="caja9" type="button" onclick="agregarNumero('9')" >9</button>
+            <button class="enviar" type="button"  onclick="verificarContrasena(inputDisplay)" >aceptar</button>
+            <button class="boton" onclick="limpiarInput()">Borrar</button>
         
-    </header>
-       <section class="productos">
-    <a href="Producto1.html" class="Articulo1">
-        <h2 class="titulo1">Titulo</h2>
-        <img src="imagen.webp" class="img1"/>
-        <p class="Letra1">Precio:</p>
-        <p class="Precio1">$0000</p>     
-    </a>
-  
-    <a href="Producto2.html" class="Articulo2">
-        <h2 class="titulo2">Titulo</h2>
-        <img src="imagen.webp" class="img2"/>
-        <p class="Letra2">Precio:</p>
-        <p class="Precio2">$0000</p>
-    </a>
+        </div>
 
-    <a href="Producto3.html" class="Articulo3">
-        <h2 class="titulo3">Titulo</h2>
-        <img src="imagen.webp" class="img3"/>
-        <p class="Letra3">Precio:</p>
-        <p class="Precio3">$0000</p>
-    </a>
+            <script src="Verifica.js"></script>
+            
+    </body>
 
-    <a href="Producto4.html" class="Articulo4">
-        <h2 class="titulo4">Titulo</h2>
-        <img src="imagen.webp" class="img4"/>
-        <p class="Letra4">Precio:</p>
-        <p class="Precio4">$0000</p>
-    </a>
-
-    <a href="Producto5.html" class="Articulo5">
-        <h2 class="titulo5">Titulo</h2>
-        <img src="imagen.webp" class="img5"/>
-        <p class="Letra5">Precio:</p>
-        <p class="Precio5">$0000</p>
-    </a>
-
-    <a href="Producto6.html" class="Articulo6">
-        <h2 class="titulo6">Titulo</h2>
-        <img src="imagen.webp" class="img6"/>
-        <p class="Letra6">Precio:</p>
-        <p class="Precio6">$0000</p>
-    </a>
-
-    <a href="Producto7.html" class="Articulo7">
-        <h2 class="titulo7">Titulo</h2>
-        <img src="imagen.webp" class="img7"/>
-        <p class="Letra7">Precio:</p>
-        <p class="Precio7">$0000</p>
-    </a>
-
-    <a href="Producto8.html" class="Articulo8">
-        <h2 class="titulo8">Titulo</h2>
-        <img src="imagen.webp" class="img8"/>
-        <p class="Letra8">Precio:</p>
-        <p class="Precio8">$0000</p>
-    </a>
-    </section>
-
-    <section class="Contacto">
-        <a href="  " >
-            <img src="Logo-Whatsapp.png" class="RutaWhatsApp"/>
-        </a>
-        <a href="">
-            <img src="facebook-logo.webp" class="RutaFacebook"/>
-        </a>
-        <a href="">
-            <img src="Logo-Email.jpg" class="RutaEmail" />
-        </a>
-    </section> 
-
-    <footer class="Fin">
-        <p class="Copyright">Copyright 2025</p>
-    </footer>
-
-</body>
 </html>
