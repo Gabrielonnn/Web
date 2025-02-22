@@ -1,88 +1,90 @@
+/*@media (min-width: 1024px) {
+    body {
+        background-color: lightblue;
+    }
+    
+}*/
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(170, 162, 167);
+    }
 button:hover{
     transition: box-shadow 0.20s ease;
     margin: 0.33rem 0;
     border-radius: 30px;
     padding: 0.25rem 0;
-    box-shadow: 0 0.1rem 1.4rem  rgb(220, 110,184);
-}
-.Corazon{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 800px;
-    left: 400px;
-    margin-top: -50px;
-    margin-left: -50px;
-    animation: latir 8s infinite ease-in-out;
-   
-}
-.Corazon::before,
-.Corazon::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
-}
-.Corazon::before {
-    top: -50px;
-    left: 0;
-    box-shadow: 3px 0 0 1px rgb(0,0,0,0.5);
+    box-shadow: 0 0.1rem 2.4rem  rgb(220, 110,184);
 }
 
-.Corazon::after {
-    left: 50px;
-    top: 0;
-    box-shadow: 3px 0 0 1px rgb(0,0,0,0.5);
-
-}
-@keyframes latir{
-  
-    50% {
-        transform: rotate(-45deg) scale(1) translate(-100px , 100px);
-    }
-
-}
-.CajaFuerte{
+.Sobre{
     position: absolute;
-    width: 800px;
-    height: 820px;
-    top: 900px;
-    left: 95px;
+    width: 540px;
+    height: 400px;
+    top: 20px;
+    left: 5px;
     border: 8px solid rgb(220, 110,184);
-    border-radius: 30px;
-    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
-    background-color: rgb(241, 229, 235);
+    border-radius:0 0 30px 30px;
+    box-shadow: 5px 10px 10px 8px rgb(0,0,0,0.5);
+    background-color: rgb(243, 214, 228);
+    animation: mover 1s infinite ease-in-out;
    
 }
-.boton{
-   
+.Post{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(220, 110,184);
+    border-radius: 50%;
+    top: 95px;
+    left: 245px;
+    box-shadow: -1px 5px 8px rgb(0,0,0,0.5);
+}
+@keyframes mover {
+    50% {
+        transform: scale(1.01) translateY(5px);
+    }
+}
+.Mover{
+    animation: mover 1s infinite ease-in-out;
+}
+.diagonalDerecha{
+    width: 150px; /* Ancho completo del contenedor */
+    height: 8px; 
+    background-color: rgb(220, 110,184);/* Color de la línea */
+    transform: rotate(-60deg); /* Rotación en -45 grados */
+    position: absolute; 
+    top: 55px;
+    left: 430px;
+    box-shadow: -10px 5px 19px  rgb(0,0,0,2.5);
+}
+.diagonalIzquierda{
+    width: 150px;
+    height: 8px;
+    background-color: rgb(220, 110,184);
+    transform: rotate(60deg);
     position: absolute;
-    width: 130px;
-    height: 90px;
-    border: 5px solid  rgb(220, 110,184);
-    border-radius: 30px ;
-    top: 1480px;
-    left: 440px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:  rgb(220, 110,184);
-    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+    top: 55px;
+    left: -40px;
+    box-shadow: 12px 5px 15px  rgb(0,0,0,2.5);
 }
+.Vertical{
+    width: 400px;
+    height: 8px;
+    background-color: rgb(220, 110,184);
+    position : absolute;
+    top: 118px;
+    left: 70px;
+    box-shadow: 5px 7px 15px rgb(0,0,0,2.5);
+}
+
 #inputDisplay{
     position: absolute;
     width: 360px;
     height: 80px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 985px;
-    left: 320px;
+    top: 250px;
+    left: 90px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -92,14 +94,29 @@ button:hover{
     color:  rgb(220, 110,184);
     background-color: #fff;
 }
+.Borrar{
+    position: absolute;
+    width: 160px;
+    height: 110px;
+    border: 5px solid  rgb(220, 110,184);
+    border-radius: 30px ;
+    top: 890px;
+    left: 200px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(220, 110,184);
+    box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
 .enviar{
     position: absolute;
-    width: 130px;
-    height: 90px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1480px;
-    left:590px;
+    top: 890px;
+    left: 390px;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -109,12 +126,12 @@ button:hover{
 }
 .caja{
     position: absolute;
-    width: 130px;
-    height: 90px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1480px;
-    left: 290px;
+    top: 890px;
+    left: 10px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -125,12 +142,12 @@ button:hover{
 }
 .caja1{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1360px;
-    left: 290px;
+    top: 760px;
+    left: 10px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -140,12 +157,12 @@ button:hover{
 }
 .caja2{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1360px;
-    left: 440px;
+    top: 760px;
+    left: 200px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -155,12 +172,12 @@ button:hover{
 }
 .caja3{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1360px;
-    left: 590px;
+    top: 760px;
+    left: 390px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -170,12 +187,12 @@ button:hover{
 }
 .caja4{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid rgb(220, 110,184);
     border-radius: 30px;
-    top: 1230px;
-    left: 290px;
+    top: 630px;
+    left: 10px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -185,12 +202,12 @@ button:hover{
 }
 .caja5{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid rgb(220, 110,184);
     border-radius: 30px;
-    top: 1230px;
-    left: 440px;
+    top: 630px;
+    left: 200px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -200,12 +217,12 @@ button:hover{
 }
 .caja6{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1230px;
-    left: 590px;
+    top: 630px;
+    left: 390px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -215,12 +232,12 @@ button:hover{
 }
 .caja7{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid rgb(220, 110,184);
     border-radius: 30px;
-    top: 1100px;
-    left: 290px;
+    top: 500px;
+    left: 10px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -230,12 +247,12 @@ button:hover{
 }
 .caja8{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid rgb(220, 110,184);
     border-radius: 30px;
-    top: 1100px;
-    left: 440px;
+    top: 500px;
+    left: 200px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -245,16 +262,18 @@ button:hover{
 }
 .caja9{
     position: absolute;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     border: 5px solid  rgb(220, 110,184);
     border-radius: 30px;
-    top: 1100px;
-    left: 590px;
+    top: 500px;
+    left: 390px;
     font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     color:  rgb(220, 110,184);
     box-shadow: 5px 10px 10px  rgb(0,0,0,0.5);
+}
+
 }
